@@ -1,0 +1,210 @@
+body{
+    background: linear-gradient(90deg, #151515, #333333);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    color: #333333;
+}
+p{
+    color: black;
+    font-weight: 500;
+    text-align: justify;
+}
+.Navigation{
+    background: linear-gradient(90deg, #ddd, #ffffff);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+}
+.Nav-Logo{
+    width: 75px;
+    height: 100%;
+    text-align: center;
+}
+.Logo{
+    width: 35px;
+    height: 35px;
+    margin: 5px; 
+}
+.Nav-Menu{    
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.Nav-Item{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+.Nav-Item:hover{
+    background: linear-gradient(90deg, #00aaff, #00c3ff);
+    color: white;
+}
+.Nav-Account{
+    width: 250px;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+.Btn-Rounded{
+    background: linear-gradient(90deg, #00aaff, #00c3ff);
+    color: white;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 50px;
+}
+.Btn-Rounded:hover{
+    background: linear-gradient(90deg, #0954b6, #0259aa);
+}
+.Main-Body{
+    background: linear-gradient(90deg, #ddd, #ffffff);
+    width: calc(1024px - 25px - 25px - 2px );
+    height: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border: 1px solid #00000066;
+    padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.Login{
+    background: linear-gradient(90deg, #ddd, #ffffff);
+    height: fit-content;
+    width: fit-content;
+    padding: 25px;
+    margin: auto;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.float-right{
+    float: right;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.flex1{
+    flex: 1;
+}
+.flex-start{
+    align-items: stretch;
+}
+.txt-fld{
+    margin: 5px; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.txt-fld:focus{
+    border: 1px solid #00c3ff;
+    outline: none;
+}
+.txt-center{
+    width: 100%;
+    text-align: center;
+}
+.ft-bold{
+    font-weight: bold;
+}
+.ft-24{
+    font-size: 24px;
+}
+
+.mg-50{
+    margin: 50px;
+}
+.mg-l-50{
+    margin-left: 50px;
+}
+.mg-r-50{
+    margin-right: 50px;
+}
+.mg-t-50{
+    margin-top: 50px;
+}
+.mg-b-50{
+    margin-bottom: 50px;
+}
+
+.mg-25{
+    margin: 25px;
+}
+.mg-l-25{
+    margin-left: 25px;
+}
+.mg-r-25{
+    margin-right: 25px;
+}
+.mg-t-25{
+    margin-top: 25px;
+}
+.mg-b-25{
+    margin-bottom: 25px;
+}
+
+.mg-15{
+    margin: 15px;
+}
+.mg-l-15{
+    margin-left: 15px;
+}
+.mg-r-15{
+    margin-right: 15px;
+}
+.mg-t-15{
+    margin-top: 15px;
+}
+.mg-b-15{
+    margin-bottom: 15px;
+}
+
+.mg-10{
+    margin: 10px;
+}
+.mg-l-10{
+    margin-left: 10px;
+}
+.mg-r-10{
+    margin-right: 10px;
+}
+.mg-t-10{
+    margin-top: 10px;
+}
+.mg-b-10{
+    margin-bottom: 10px;
+}
+
+.mg-5{
+    margin: 5px;
+}
+.mg-l-5{
+    margin-left: 5px;
+}
+.mg-r-5{
+    margin-right: 5px;
+}
+.mg-t-5{
+    margin-top: 5px;
+}
+.mg-b-5{
+    margin-bottom: 5px;
+}
