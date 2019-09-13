@@ -20,8 +20,9 @@
             <div class="Nav-Item">Forum</div>
         </div>
         <div class="Nav-Account">
-            <div class="Btn-Rounded mg-10" onclick="inscription()">Inscription</div>    
-            <div class="Btn-Rounded mg-10" onclick="connexion()">Connection</div>           
+            <div id="nav-inscription" class="Btn-Rounded mg-10" onclick="inscription()">Inscription</div>    
+            <div id="nav-connexion" class="Btn-Rounded mg-10" onclick="connexion()">Connection</div>    
+            <div id="profil-panel">PROFIL</div>       
         </div>
     </div>
 
@@ -62,6 +63,7 @@
 
     <div id="connexion" class="Login">
         <form action="POST">            
+            <span class="modal-close" onclick="closeConnexion()">X</span>
             <div class="flex-row flex1 mg-15 ">
                 <span class="txt-center ft-bold ft-24">Authentification</span> 
             </div>
@@ -74,13 +76,14 @@
             </div>
             <div class="flex-row mg-t-10">
                 <div class="Btn-Rounded mg-10" onclick="inscription()">Inscription</div>    
-                <div class="Btn-Rounded mg-10">Connection</div>  
+                <div class="Btn-Rounded mg-10" onclick="authentification()">Connection</div>  
             </div> 
         </form>
     </div>
 
     <div id="subscrib" class="Login">
         <form action="POST">            
+            <span class="modal-close" onclick="closeInscription()">X</span>
             <div class="flex-row flex1 mg-15">
                 <span class="txt-center ft-bold ft-24 mg-b-50">Formulaire d'inscription</span> 
             </div>
@@ -143,6 +146,7 @@
             document.getElementById('step-ok').hidden = true;
             document.getElementById('step-1').hidden = false;
             document.getElementById('step-2').hidden = true;
+            document.getElementById('profil-panel').style.display = "none";
             function nextStep(){
                 document.getElementById('step-prev').hidden = false;
                 document.getElementById('step-next').hidden = true;
@@ -162,7 +166,12 @@
             function sendStep(){
                 document.getElementById('subscrib').style.display = "none";
                 //send to api
-                connexion()
+            }
+            function authentification(){
+                document.getElementById('connexion').style.display = "none";
+                document.getElementById('nav-inscription').style.display = "none";
+                document.getElementById('nav-connexion').style.display = "none";
+                document.getElementById('profil-panel').style.display = "block";
             }
             function inscription(){
                 document.getElementById('subscrib').style.display = "block";
@@ -170,6 +179,12 @@
             }
             function connexion(){
                 document.getElementById('connexion').style.display = "block";
+                document.getElementById('subscrib').style.display = "none";
+            }
+            function closeConnexion(){                
+                document.getElementById('connexion').style.display = "none";
+            }
+            function closeInscription(){                
                 document.getElementById('subscrib').style.display = "none";
             }
         </script>

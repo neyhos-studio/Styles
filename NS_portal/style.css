@@ -208,3 +208,12 @@ p{
 .mg-b-5{
     margin-bottom: 5px;
 }
+
+.modal-close{
+    display: block;
+    float: right;
+    margin-top: -25px;
+}
+.modal-close:hover{
+    color: #bb0000
+}
