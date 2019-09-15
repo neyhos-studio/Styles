@@ -10,15 +10,15 @@
 <body>
 
     <!-- Navigation -->
-    <div class="w-fit-par h-50 light flex-row">
+    <div class="w-fit-par h-50 dark ft-light  flex-row">
         <div class="w-fit-ctn">
             <img class="w-40 h-40 mg-t-5 mg-l-25 mg-r-25" src="./src/NS.png">
         </div>
         <div class="flex1 h-fit-par  flex-row">
-            <div class="txt-hv ft-dark ft-bold pd-l-25 pd-r-25 mg-t-12">Jeux</div>
-            <div class="txt-hv ft-dark ft-bold pd-l-25 pd-r-25 mg-t-12">Actualités</div>
-            <div class="txt-hv ft-dark ft-bold pd-l-25 pd-r-25 mg-t-12">Boutique</div>
-            <div class="txt-hv ft-dark ft-bold pd-l-25 pd-r-25 mg-t-12">Forum</div>
+            <div class="txt-hv ft-bold pd-l-25 pd-r-25 mg-t-12">Jeux</div>
+            <div class="txt-hv ft-bold pd-l-25 pd-r-25 mg-t-12">Actualités</div>
+            <div class="txt-hv ft-bold pd-l-25 pd-r-25 mg-t-12">Boutique</div>
+            <div class="txt-hv ft-bold pd-l-25 pd-r-25 mg-t-12">Forum</div>
         </div>
         <div class="w-fit-ctn h-fit-par  flex-row">
             <div class="btn valid rad-5 mg-10" onclick="inscription()">Inscription</div>    
@@ -27,117 +27,151 @@
     </div>
 
     <!-- Profil -->
-    <div class="w-900 h-fit-ctn light pd-25 mg-t-10 center-horizontal flex-row">
+    <div class="w-900 h-fit-ctn dark  mg-t-50 center-horizontal flex-col"> 
 
-        <!-- Left -->
-        <div class="w-250 flex-col mg-r-10">
-            <img class="w-fit-par h-125" src="./src/wallpaper.jpg">
-            <div class="flex1 flex-col">
+        <!-- Profil title -->
+        <div class="flex1 pd-b-15 pd-t-15 pd-l-15 ft-bold ">Mon profil</div>
 
-                <div class="flex1 flex-col w-fit-par mg-t-5 bd-t-light">
-                    <div class="flex1 ft-bold">Informations</div>
-                    <div class="flex1 mg-t-5 flex-row w-fit-par">
-                        <div class="flex1 pd-l-15">Pseudonyme</div>
-                        <div class="valid w-fit-ctn pd-l-5 pd-r-5 light">Edit</div>
+        <!-- Profil component -->
+        <div class="pd-25 mg-0 flex-row darker"> 
+            
+            <!-- Left -->
+            <div class="w-250 h-fit-ctn flex-col mg-r-10">
+
+                <!-- Profil Image -->
+                <img class="w-fit-par h-125 " src="./src/wallpaper.jpg">
+
+                <!-- Profil bottom -->
+                <div class="flex1 flex-col">
+
+                    <!-- Component INFORMATION -->
+                    <div class="flex1 flex-col w-fit-par mg-t-15 ">
+
+                        <div class="flex1 ft-bold pd-5  dark">Informations</div>
+
+                        <div class="pd-5 mg-0 flex-row darky">
+                            <div class="flex1">Pseudonyme</div>
+                            <div class="pd-5 fas fa-pencil-alt txt-hv"></div>
+                        </div>
+
+                        <div class="pd-5 mg-0 flex-row darky">
+                            <div class="flex1">Email</div>
+                            <div class="pd-5 fas fa-pencil-alt txt-hv"></div>
+                        </div>
+
+                        <div class="pd-5 mg-0 flex-row darky">
+                            <div class="flex1">Mot-de-passe</div>
+                            <div class="pd-5 fas fa-pencil-alt txt-hv"></div>
+                        </div>
+
+                        <div class="pd-5 mg-0 flex-row darky">
+                            <div class="flex1">Telephone</div>
+                            <div class="pd-5 fas fa-pencil-alt txt-hv"></div>
+                        </div>
+
                     </div>
 
-                    <div class="flex1 mg-t-5 flex-row w-fit-par">
-                        <div class="flex1 pd-l-15">Email</div>
-                        <div class="valid w-fit-ctn pd-l-5 pd-r-5 light">Edit</div>
+                    <!-- Internet PROTOCOL -->
+                    <div class="flex1 flex-col w-fit-par mg-t-15  ">
+
+                        <div class="flex1 ft-bold pd-5  dark">IP Autorisé</div>
+
+                        <div class="flex1 flex-col w-fit-par">
+
+                                <div class="pd-5 mg-0 flex-row darky">
+                                    <div class="flex1">Paris</div>
+                                    <div class="pd-5 fas fa-trash-alt txt-cancel-hv"></div>
+                                </div>
+
+                                <div class="pd-5 mg-0 flex-row darky">
+                                    <div class="flex1">Lyon</div>
+                                    <div class="pd-5 fas fa-trash-alt txt-cancel-hv"></div>
+                                </div>
+
+                                <div class="pd-5 mg-0 flex-row darky">
+                                    <div class="flex1">Toulouse</div>
+                                    <div class="pd-5 fas fa-trash-alt txt-cancel-hv"></div>
+                                </div>  
+
+                        </div>
+
                     </div>
 
-                    <div class="flex1 mg-t-5 flex-row w-fit-par">
-                        <div class="flex1 pd-l-15">Mot-de-passe</div>
-                        <div class="valid w-fit-ctn pd-l-5 pd-r-5 light">Edit</div>
-                    </div>
-
-                    <div class="flex1 mg-t-5 flex-row w-fit-par">
-                        <div class="flex1 pd-l-15">Telephone</div>
-                        <div class="valid w-fit-ctn pd-l-5 pd-r-5 light">Edit</div>
-                    </div>
                 </div>
 
-                <div class="flex1 flex-col w-fit-par mg-t-10 bd-t-light">
-                    <div class="flex1 ft-bold">IP Autorisé</div>
-                    <div class="flex1 mg-t-5 flex-col w-fit-par">
-                            <div class="flex1 mg-t-5 flex-row w-fit-par">
-                                <div class="flex1 pd-l-15">Paris</div>
-                                <div class="cancel w-fit-ctn pd-l-5 pd-r-5 light">Delete</div>
-                            </div>
-                            <div class="flex1 mg-t-5 flex-row w-fit-par">
-                                <div class="flex1 pd-l-15">Lyon</div>
-                                <div class="cancel w-fit-ctn pd-l-5 pd-r-5 light">Delete</div>
-                            </div>
-                            <div class="flex1 mg-t-5 flex-row w-fit-par">
-                                <div class="flex1 pd-l-15">Toulouse</div>
-                                <div class="cancel w-fit-ctn pd-l-5 pd-r-5 light">Delete</div>
-                            </div>                            
-                    </div>
-                </div>
             </div>
+
+            <!-- Right -->
+            <div class="flex1 h-fit-ctn flex-col mg-l-25 ">   
+
+                <!-- Component GAMES -->
+                <div class="flex1 flex-col w-fit-par mg-t-0 ">
+
+                    <div class="pd-5 mg-0 ft-bold dark ">MES JEUX</div>
+
+                    <!-- Table -->
+                    <div class="w-fit-par flex-col ft-light">
+
+                        <!-- Row -->
+                        <div class="flex1 flex-row mg-0 darky ft-bold">
+                            <div class="w-250 h-45">
+                                <img class="w-250 h-fit-par h-45 img-scope" src="./src/wallpaper.jpg">
+                            </div>
+                            <div class="flex1 pd-t-10 pd-l-15">NS_MMO</div>
+                            <div class="w-100 pd-t-10 mg-r-15 txt-a-r"><span>possédé</span></div>
+                        </div>
+
+                        <!-- Row -->
+                        <div class="flex1 flex-row mg-0 bd-t-hidden darky ft-bold">
+                            <div class="w-250 h-45">
+                                <img class="w-250 h-fit-par img-scope" src="https://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg">
+                            </div>
+                            <div class="flex1 pd-t-10 pd-l-15">JEUX INCCONU</div>
+                            <div class="w-100 pd-t-10 mg-r-15 txt-a-r"><span>40.00€</span></div>
+                        </div>
+
+                    </div>
+                </div> 
+                
+                <!-- Component API -->
+                <div class="flex1 flex-col w-fit-par mg-t-15 ">
+
+                    <div class="pd-5 mg-0 ft-bold dark ">MES CLES API</div>
+
+                    <!-- Table -->
+                    <div class="w-fit-par flex-col ft-light">
+
+                        <!-- Row -->
+                        <div class="flex1 flex-row mg-0 darky ft-bold">
+                            <div class="flex1 mg-0 pd-10 txt-a-c flex-row">
+                                <span class="flex1">AZEivbazeoi49841sresssretSERTSertger46sdfgsdfg</span>
+                                <div class="pd-5 fas fa-copy txt-hv"></div>
+                                <div class="pd-5 fas fa-trash-alt txt-cancel-hv"></div>
+                                                                 
+                            </div>
+                        </div>
+
+                        <!-- Row -->
+                        <div class="flex1 flex-row mg-0 darky ft-bold">
+                            <div class="flex1 mg-0 pd-10 txt-a-c flex-row">
+                                <span class="flex1">AZEivbazeoi49841sresssretSERTSertger46sdfgsdfg</span>
+                                <div class="pd-5 fas fa-copy txt-hv"></div>
+                                <div class="pd-5 fas fa-trash-alt txt-cancel-hv"></div>
+                                                                 
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>                 
+
+            </div>
+
         </div>
 
-        <!-- Right -->
-        <div class="flex1 flex-col mg-l-25">            
-            <div class="w-fit-par mg-b-25 ft-bold pd-l-15">MES JEUX</div>
-            <div class="w-fit-par flex-col ft-light">
-                <!-- Table Header -->
-                <div class="flex1 flex-row mg-t-2 mg-l-0 mg-r-0 dark-blue">
-                    <div class="w-250 h-45">
-                        <img class="w-250 h-fit-par h-45 img-scope" src="./src/wallpaper.jpg">
-                    </div>
-                    <div class="flex1 pd-t-10 txt-a-c ft-bold">NS_MMO</div>
-                    <div class="w-100 pd-t-10 mg-r-15 txt-a-r"><span>possédé</span></div>
-                </div>
-                <div class="flex1 flex-row mg-t-2 mg-l-0 mg-r-0 dark-blue">
-                    <div class="w-250 h-45">
-                        <img class="w-250 h-fit-par img-scope" src="./src/wallpaper.jpg">
-                    </div>
-                    <div class="flex1 pd-t-10 txt-a-c ft-bold">JEUX INCCONU</div>
-                    <div class="w-100 pd-t-10 mg-r-15 txt-a-r"><span>40.00€</span></div>
-                </div>
-
-            </div>
-        </div>
     </div>
 
-    <script>
-            step = 1;
-            document.getElementById('connexion').style.display = "none";
-            document.getElementById('subscrib').style.display = "none";
-            document.getElementById('step-prev').hidden = true;
-            document.getElementById('step-ok').hidden = true;
-            document.getElementById('step-1').hidden = false;
-            document.getElementById('step-2').hidden = true;
-            function nextStep(){
-                document.getElementById('step-prev').hidden = false;
-                document.getElementById('step-next').hidden = true;
-                document.getElementById('step-ok').hidden = false;
-                document.getElementById('step-1').hidden = true;
-                document.getElementById('step-2').hidden = false;
-                step++;
-            }
-            function previouStep(){
-                document.getElementById('step-prev').hidden = true;
-                document.getElementById('step-next').hidden = false;
-                document.getElementById('step-ok').hidden = true;
-                document.getElementById('step-1').hidden = false;
-                document.getElementById('step-2').hidden = true;
-                step--;
-            }
-            function sendStep(){
-                document.getElementById('subscrib').style.display = "none";
-                //send to api
-                connexion()
-            }
-            function inscription(){
-                document.getElementById('subscrib').style.display = "block";
-                document.getElementById('connexion').style.display = "none";
-            }
-            function connexion(){
-                document.getElementById('connexion').style.display = "block";
-                document.getElementById('subscrib').style.display = "none";
-            }
-    </script>
+    <!-- ONLY SCRIPTS BELOW -->
+    <script src="https://kit.fontawesome.com/1d3cc8e299.js"></script>
 </body>
 </html>
