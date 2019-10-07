@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="shortcuts.css">    
+    <script src="https://kit.fontawesome.com/1d3cc8e299.js"></script>
+    <title>NS Launcher Style-Guide</title>
+</head>
+<body>
+
+    <div class="w100p txt-c">
+        <h1>NS Launcher Style-Guide</h1>
+    </div>
+
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher [UAS]User Autentication System</h3>
+    </div>
+
+    <!-- Authentification -->
+    <div style="
+        width: 350px;
+        height: fit-content;
+        background: black;
+        margin: auto;
+        display: flex;
+        "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+
+        <div class="fx f1 fx-col bg-light bd-light no-select">
+
+            <!-- Top Dragable -->
+            <div class="fx fx-row shadow z4" id="windows-bar">
+                <div class="f1">
+                    <span class="ft-dark ft-bold ml5">NS Launcher</span>
+                </div>
+                <div class="f1 txt-r">
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="txt-c mt15">
+                <img class="logo-l" src="./src/NS-flat.png" alt="NEYHOS|Studio">
+            </div>
+
+            <form class="fx f1 fx-col" action="">
+                <input class="txt-input mlr15 mt10 ptb5" type="email" name="email" id="email" placeholder="Email...">
+
+                <input class="txt-input mlr15 mt10 ptb5 mb5" type="password" name="password" id="password" placeholder="Mot de passe...">
+
+                <span class="ckb"><input type="checkbox" name="remember" id="remember">Remember me</span>
+
+                <div class="fx fx-row mt5">
+                    <div class="f1 txt-c">
+                        <button class="btn light shadow ml15">Inscription</button>
+                    </div>
+                    <div class="f1 txt-c">
+                        <input class="btn info shadow mr15" type="submit" name="connexion" id="connexion" value="Connexion">
+                    </div>
+                </div>
+                
+                <div class="fx fx-row mb15">
+                    <a class="f1 txt-c mt15 ft-b" style="font-size: 14px;">Mot de passe oublié ?</a>
+                </div>   
+            </form>         
+
+        </div>
+
+    </div>   
+    
+    <br><br>
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher [MF]MainFrame</h3>
+    </div>
+
+
+    <!-- MainFrame -->
+    <div style="
+    width: 1024px;
+    height: 640px;
+    background: black;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+        <div class="fx f1 bg-light bd-light fx-col no-select">
+
+            <!-- Top Dragable -->
+            <div class="fx fx-row shadow z4" id="windows-bar">
+                <div class="f1">
+                    <span class="ft-dark ft-bold ml5">NS Launcher</span>
+                </div>
+                <div class="f1 txt-r">
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="fx f1 light fx-row">
+
+                <!-- Left Menu -->
+                <div class="fx fx-col wfc h100p ghost z3 shadow">
+                    <div class="fx f1 fx-col w100p hfc" id="left-game-bar">
+                        <item class="pt5 plr5"><img class="logo br5 light shadow" src="./src/NS-flat.png" alt=""></item>
+                        <item class="pt5 plr5"><img class="logo br5 light shadow" src="./src/NS-flat.png" alt=""></item>
+                        <item class="pt5 plr5"><img class="logo br5 light shadow" src="./src/NS-flat.png" alt=""></item>
+                    </div>
+                    <div class="fx f1 fx-col fx-grow-inherit w100p hfc" id="left-menu-bar">
+                        <item class="pt5 plr5 txt-c"><img class="logo-s br5 h-shadow h-light" src="./src/NS-flat.png" alt=""></item>
+                        <item class="pt5 plr5"><div class="br5 ft-dark txt-c h-shadow h-light"><i class="fas fa-home mtb10" style="font-size: 20px;"></i></div></item>
+                        <item class="pt5 plr5"><div class="br5 ft-dark txt-c h-shadow h-light"><i class="fas fa-user-friends mtb10" style="font-size: 20px;"></i></div></item>
+                        <item class="pt5 plr5"><div class="br5 ft-dark txt-c h-shadow h-light"><i class="fas fa-coins mtb10" style="font-size: 20px;"></i></div></item>
+                        <item class="pt5"><div class="w100p ptb5 br5 ft-dark txt-c h-shadow h-light">0.0.2</div></item>
+                    </div>
+                </div>
+
+                <!-- Page Content -->
+                <div class="fx f1 dark">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <br><br>
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher [GP]GamePage</h3>
+    </div>
+    
+    <!-- Game Page -->
+    <div style="
+    width: 967px;
+    height: 614px;
+    background: black;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+        <div class="f1 fx fx-col light bd-light no-select">
+            
+            <!-- Title -->
+            <div class="plr25">
+                <h2>Game Title</h2>
+            </div>
+
+            <!-- News -->
+            <div class="f1 fx fx-row ghost of-x">
+                <div class="hauto w400 light m25 txt-c">Actualité</div>
+                <div class="hauto w400 light m25 txt-c">Actualité</div>
+            </div>
+
+            <!-- Downloader -->
+            <div class="hft p25 fx fx-row">
+                <!-- Download Bar -->
+                <div class="f1 h15 mt5 bd-ghost mr35 ghost">                    
+                    <div class="h100p info" style="width: 50%"></div>         
+                    <div class="h100p fx fx-row w100p bg-none">
+                        <span class="f1 ft-dark">25,13 MBps</span>
+                        <span class="f1 txt-r ft-dark">50%</span>
+                    </div>
+                </div>
+                <!-- Launch button -->
+                <button class="btn warn">Download</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div style="width: 100%; margin-top: 250px; text-align:center;">Copyright <b>NEYHOS|Studio</b> 2019, all rights reserved.</div>
+ </div>  
+</body>
+</html>
