@@ -52,7 +52,7 @@ button{
 .h100p{height: 100%;}.hauto{height: auto;}
 .hfc{height: fit-content;}
 .h5{height: 5px;}.h10{height: 10px;}.h15{height: 15px;}.h20{height: 20px;}.h25{height: 25px;}
-
+.h200{height: 200px;}
 
 /* border-radius */
 .br5{border-radius: 5px;}
@@ -167,10 +167,7 @@ button{
 }
 
 .viewport{
-    margin: 15px;
-    overflow: auto; 
-    flex: 1;
-    max-height: 250px;
+    overflow: scroll; 
 }
 .viewport::-webkit-scrollbar{
     display: none;
@@ -184,6 +181,7 @@ button{
 }
 .of-y{
     overflow-y: scroll;
+    max-height: 100%;
 }
 .of-y::-webkit-scrollbar{
     display: none;
