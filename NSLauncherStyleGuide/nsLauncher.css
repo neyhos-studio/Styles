@@ -51,6 +51,7 @@ button{
 /* Height */
 .h100p{height: 100%;}.hauto{height: auto;}
 .hfc{height: fit-content;}
+.h1{height: 1px;}.h2{height: 2px;}.h3{height: 3px;}.h4{height: 4px;}
 .h5{height: 5px;}.h10{height: 10px;}.h15{height: 15px;}.h20{height: 20px;}.h25{height: 25px;}
 .h200{height: 200px;}
 
@@ -141,6 +142,7 @@ button{
 .txt-j{text-align: justify;}
 .txt-c{text-align: center;}
 .txt-r{text-align: right;}
+.txt-l{text-align: left;}
 
 /**/
 .txt-input{
@@ -154,8 +156,9 @@ button{
 
 /**/
 .shadow{box-shadow: 0px 0px 10px #30303025;}
-.h-shadow:hover{box-shadow: 0px 0px 10px #30303025;}
+.h-shadow:hover{box-shadow: 0px 0px 10px #30303080;}
 .h-light:hover{background: #f1f2f3;}
+.txt-h:hover{text-shadow: 0px 0px 10px #30303080;}
 
 /* select none */
 .no-select{

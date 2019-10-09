@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="shortcuts.css">    
+    <link rel="stylesheet" href="nsLauncher.css">    
     <script src="https://kit.fontawesome.com/1d3cc8e299.js"></script>
     <title>NS Launcher Style-Guide</title>
 </head>
@@ -37,7 +37,7 @@
                     <span class="ft-dark ft-bold ml5">NS Launcher</span>
                 </div>
                 <div class="f1 txt-r">
-                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none"><i class="fas fa-times"></i></button>
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none h-shadow" style="padding-bottom: 0px;"><i class="fas fa-times"></i></button>
                 </div>
             </div>
 
@@ -54,15 +54,70 @@
 
                 <div class="fx fx-row mt5">
                     <div class="f1 txt-c">
-                        <button class="btn light shadow ml15">Inscription</button>
+                        <button class="btn light shadow ml15 h-shadow">Inscription</button>
                     </div>
                     <div class="f1 txt-c">
-                        <input class="btn info shadow mr15" type="submit" name="connexion" id="connexion" value="Connexion">
+                        <input class="btn info shadow mr15 h-shadow" type="submit" name="connexion" id="connexion" value="Connexion">
                     </div>
                 </div>
                 
                 <div class="fx fx-row mb15">
-                    <a class="f1 txt-c mt15 ft-b" style="font-size: 14px;">Mot de passe oublié ?</a>
+                    <a class="f1 txt-c mt15 ft-b txt-h" style="font-size: 14px;">Mot de passe oublié ?</a>
+                </div>   
+            </form>         
+
+        </div>
+
+    </div>   
+    
+    <br><br>
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher [UAS]User Autentication System - Verification Code</h3>
+    </div>
+
+    <!-- Authentification Verification Code -->
+    <div style="
+        width: 350px;
+        height: fit-content;
+        background: black;
+        margin: auto;
+        display: flex;
+        "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+
+        <div class="fx f1 fx-col bg-light bd-light no-select">
+
+            <!-- Top Dragable -->
+            <div class="fx fx-row shadow z4" id="windows-bar">
+                <div class="f1">
+                    <span class="ft-dark ft-bold ml5">NS Launcher</span>
+                </div>
+                <div class="f1 txt-r">
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none h-shadow" style="padding-bottom: 0px;"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="txt-c mt15">
+                Entrez le code de validation envoyé à :
+                <br>
+                <span class="ft-bold">exem********@gmail.com</span>
+            </div>
+
+            <form class="fx f1 fx-col" action="">
+                <input class="txt-input txt-c mt10 ptb25" style="padding-top: 10px; padding-bottom: 10px;width: 33%;text-align: center; margin: auto; margin-top: 15px; " type="text" name="code" id="code" placeholder="CODE" minlength="6" maxlength="6" >
+
+                <div class="fx fx-row mt20">
+                    <div class="f1 txt-c">
+                        <button class="btn light shadow ml15 h-shadow">Renvoyer un code</button>
+                    </div>
+                    <div class="f1 txt-c">
+                        <input class="btn info shadow mr15 h-shadow" type="submit" name="connexion" id="connexion" value="Envoyer">
+                    </div>
+                </div>
+                
+                <div class="fx fx-row mb15">
+                    <a class="f1 txt-c mt15 ft-b txt-h" style="font-size: 14px;">Je n'ai accès à mon email ?</a>
                 </div>   
             </form>         
 
@@ -96,7 +151,7 @@
                     <span class="ft-dark ft-bold ml5">NS Launcher</span>
                 </div>
                 <div class="f1 txt-r">
-                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none"><i class="fas fa-times"></i></button>
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none h-shadow" style="padding-bottom: 0px;"><i class="fas fa-times"></i></button>
                 </div>
             </div>
 
@@ -156,8 +211,27 @@
 
             <!-- News -->
             <div class="f1 fx fx-row ghost of-x">
-                <div class="f1 light m25 txt-c">Actualité</div>
-                <div class="f1 fx fx-col light m25 plr10 txt-c of-y">
+                <div class="f1 fx fx-col light ml25 mtb25 plr10 txt-c of-y">
+                    <div class="of-y txt-l">
+                            <h1 class="txt-c">Patch note 0.0.0</h1>
+                            <hr>
+                            <h4>Intruduction</h4>
+                            <p>This is an example of game last patch note. It allow you to display information inside the container to hold on user up to date with the last patch of the game.</p>
+                            <hr>
+                            <h4>New Game Feature</h4>
+                            <p>We have created a new feature for you. This simple example show you simple format to put inside this</p>
+                            <hr>
+                            <h4>New Game Feature</h4>
+                            <p>We have created a new feature for you. This simple example show you simple format to put inside this</p>
+                            <hr>
+                            <h4>New Game Feature</h4>
+                            <p>We have created a new feature for you. This simple example show you simple format to put inside this</p>
+                            <hr>
+                            <h4>New Game Feature</h4>
+                            <p>We have created a new feature for you. This simple example show you simple format to put inside this</p>
+                    </div>
+                </div>
+                <div class="w400 fx fx-col light m25 plr10 txt-c of-y">
                     <div class="of-y">
                         <div class="w100p mtb10 h200 dark"></div>
                         <div class="w100p mtb10 h200 dark"></div>
@@ -176,16 +250,117 @@
                     <div class="h100p info" style="width: 50%"></div>         
                     <div class="h100p fx fx-row w100p bg-none">
                         <span class="f1 ft-dark">25,13 MBps</span>
+                        <span class="f1 txt-c ft-dark">15,6 Go / 31,2 Go</span>
                         <span class="f1 txt-r ft-dark">50%</span>
                     </div>
                 </div>
                 <!-- Launch button -->
-                <button class="btn warn">Download</button>
+                <button class="btn warn shadow h-shadow">Download</button>
             </div>
 
         </div>
 
     </div>
+    
+    <br><br>
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher Modal Yes/No</h3>
+    </div>
+
+    <!-- YES/NO Modale -->
+    <div style="
+        width: 350px;
+        height: fit-content;
+        background: black;
+        margin: auto;
+        display: flex;
+        "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+
+        <div class="fx f1 fx-col bg-light bd-light no-select">
+
+            <!-- Top Dragable -->
+            <div class="fx fx-row shadow z4" id="windows-bar">
+                <div class="f1">
+                    <span class="ft-dark ft-bold ml5">NS Launcher</span>
+                </div>
+                <div class="f1 txt-r">
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none h-shadow" style="padding-bottom: 0px;"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="txt-c mt15">
+                Message à faire passer.
+            </div>
+
+            <form class="fx f1 fx-col" action="">
+                <div class="fx fx-row mt20">
+                    <div class="f1 txt-c">
+                        <button class="btn light shadow ml15 h-shadow">Non</button>
+                    </div>
+                    <div class="f1 txt-c">
+                        <input class="btn info shadow mr15 h-shadow" type="submit" name="connexion" id="connexion" value="Oui">
+                    </div>
+                </div>
+                
+                <div class="fx fx-row mb15">
+                    <a class="f1 txt-c mt15 ft-b txt-h" style="font-size: 14px;">Plus d'informations ?</a>
+                </div>   
+            </form>         
+
+        </div>
+
+    </div>   
+
+    
+    
+    <br><br>
+    <hr>
+    <div class="w100p txt-c">
+        <h3>NS Launcher Updater</h3>
+    </div>
+
+    <!-- Launcher update -->
+    <div style="
+        width: 350px;
+        height: fit-content;
+        background: black;
+        margin: auto;
+        display: flex;
+        "> <!-- NE PAS PRENDRE CETTE DIV QUI SERT DE TAILLE DE FENÊTRE-->
+
+
+        <div class="fx f1 fx-col bg-light bd-light no-select">
+
+            <!-- Top Dragable -->
+            <!-- <div class="fx fx-row shadow z4" id="windows-bar">
+                <div class="f1">
+                    <span class="ft-dark ft-bold ml5">NS Launcher</span>
+                </div>
+                <div class="f1 txt-r">
+                    <button class="ptb2 mr2 mb2 br5 ft-dark bg-none h-shadow" style="padding-bottom: 0px;"><i class="fas fa-times"></i></button>
+                </div>
+            </div> -->
+
+            <!-- logo -->
+            <div class="txt-c mt35">
+                <img class="logo-l mb15" src="./src/NS-flat.png" alt="NEYHOS|Studio"><br>
+                <span>Mise à jour du launcher...</span>
+            </div>
+            
+            <!-- Download Bar -->
+            <div class="f1 h5 mb0 mt50 ghost">                    
+                <div class="h100p info" style="width: 50%"></div>   
+            </div>
+
+        </div>
+
+    </div>   
+    
+
+
+    
 
 
 
